@@ -35,7 +35,7 @@
       <div class="hero-text">
         <h1>Hi, I'm <span>Abhay Kumar</span></h1>
 
-        <h2>
+        <h2 id="typing-text">
           Junior Data Engineer | Data Analyst | Junior Cloud Engineer
         </h2>
 
@@ -45,6 +45,9 @@
         </p>
 
         <div class="btn-group">
+          <a href="Abhay_Kumar_Resume.pdf" download class="btn primary-btn">
+            <i class="fas fa-download"></i> Resume
+          </a>
           <a href="#projects" class="btn primary-btn">View Projects</a>
 
           <a href="https://github.com/abhay2470" target="_blank" class="btn secondary-btn">
@@ -188,6 +191,23 @@
     </div>
   </section>
 
+  <section id="certifications">
+    <div class="container">
+
+      <h2 class="section-title">Certifications</h2>
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <h3>AWS & Data Engineering Training</h3>
+          <p>ThinkNEXT Technologies Pvt. Ltd.</p>
+          <p>Hands-on experience with AWS Cloud, ETL Pipelines, Apache Spark, and Power BI.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <section id="education">
     <div class="container">
 
@@ -246,7 +266,21 @@
     <p>© 2026 Abhay Kumar | Built with HTML & CSS | Hosted on GitHub Pages</p>
   </footer>
 
+  <script>
+    const roles = [
+      'Junior Data Engineer',
+      'Data Analyst',
+      'Junior Cloud Engineer'
+    ];
+
+    let index = 0;
+    const typingText = document.getElementById('typing-text');
+
+    setInterval(() => {
+      typingText.innerHTML = roles[index];
+      index = (index + 1) % roles.length;
+    }, 2000);
+  </script>
+
 </body>
 </html>
-
- 
