@@ -59,16 +59,15 @@ nav a:hover {
 .hero {
   min-height: 90vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 0 8%;
-  gap: 50px;
+  text-align: center;
 }
 
 .hero-content {
-  flex: 1;
+  max-width: 900px;
 }
-
 .hero-content h1 {
   font-size: 70px;
   margin: 10px 0;
