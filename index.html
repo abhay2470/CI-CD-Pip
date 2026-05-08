@@ -1,88 +1,224 @@
+# Premium Portfolio Website
+
+## index.html
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhay Kumar | Data & Cloud Engineer Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abhay Kumar | Data Engineer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a2d2706c4b.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="logo">AK<span>.DATA</span></div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="mailto:abhaychaudhary2026@gmail.com" class="btn-contact">Get In Touch</a></li>
-        </ul>
+  <div class="background-glow"></div>
+
+  <header>
+    <nav>
+      <div class="logo">ABHAY.</div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <header class="hero">
-        <div class="hero-content">
-            <p class="mono-text">Hi, my name is</p>
-            <h1>Abhay Kumar.</h1>
-            <h2 class="sub-heading">I build scalable data pipelines and cloud solutions.</h2>
-            <p class="hero-desc">
-                Junior Data Engineer & Cloud Specialist focused on turning raw data into actionable insights 
-                using AWS, Python, and SQL. Currently completing professional certification in 
-                Data Science and Cloud Computing[cite: 6, 7, 39].
-            </p>
-            <div class="social-links">
-                <a href="https://linkedin.com/in/abhay-kumar-4a623a3a4" target="_blank">LinkedIn</a>
-                <a href="https://github.com/abhay2470" target="_blank">GitHub</a>
-            </div>
+  <section class="hero">
+    <div class="hero-content">
+      <h3>HELLO, I'M</h3>
+      <h1>Abhay Kumar</h1>
+      <h2><span class="typing"></span></h2>
+      <p>
+        Passionate fresher focused on building scalable cloud systems,
+        real-time data pipelines, and analytics dashboards using AWS,
+        Python, SQL, Power BI, Spark, and modern cloud technologies.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="Abhay_Kumar_Resume.pdf" download class="btn secondary">
+          Download Resume
+        </a>
+      </div>
+
+      <div class="socials">
+        <a href="mailto:abhaychaudhary2026@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/abhay2470" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/abhay-kumar-4a623a3a4/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <div class="image-card">
+        <img src="https://i.ibb.co/QF5M7Q7/programmer.png" alt="profile" />
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2 class="section-title">About Me</h2>
+
+    <div class="glass-card">
+      <p>
+        I am a Data Science & Cloud Computing trainee with hands-on experience
+        in AWS cloud services, real-time data engineering pipelines,
+        Power BI dashboards, and serverless architectures.
+      </p>
+
+      <p>
+        I enjoy transforming raw data into meaningful business insights and
+        building scalable cloud-native applications using modern technologies.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <h2 class="section-title">Technical Skills</h2>
+
+    <div class="skills-grid">
+      <div class="skill-card">
+        <i class="fab fa-python"></i>
+        <h3>Python</h3>
+      </div>
+
+      <div class="skill-card">
+        <i class="fas fa-database"></i>
+        <h3>SQL</h3>
+      </div>
+
+      <div class="skill-card">
+        <i class="fab fa-aws"></i>
+        <h3>AWS</h3>
+      </div>
+
+      <div class="skill-card">
+        <i class="fas fa-chart-line"></i>
+        <h3>Power BI</h3>
+      </div>
+
+      <div class="skill-card">
+        <i class="fas fa-fire"></i>
+        <h3>Apache Spark</h3>
+      </div>
+
+      <div class="skill-card">
+        <i class="fab fa-docker"></i>
+        <h3>Docker</h3>
+      </div>
+
+      <div class="skill-card">
+        <i class="fab fa-github"></i>
+        <h3>GitHub</h3>
+      </div>
+
+      <div class="skill-card">
+        <i class="fas fa-server"></i>
+        <h3>Linux</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2 class="section-title">Featured Projects</h2>
+
+    <div class="project-grid">
+
+      <div class="project-card">
+        <h3>Real-Time Data Pipeline</h3>
+        <p>
+          Built a real-time AWS pipeline using Lambda, S3, Python,
+          and Streamlit to automate live API data processing.
+        </p>
+
+        <div class="tech-stack">
+          <span>AWS Lambda</span>
+          <span>S3</span>
+          <span>Python</span>
+          <span>Streamlit</span>
         </div>
-    </header>
+      </div>
 
-    <section id="skills" class="container">
-        <h2 class="section-title">Technical Arsenal</h2>
-        <div class="skills-grid">
-            <div class="skill-category">
-                <h3>Cloud & Engineering</h3>
-                <p>AWS (S3, Lambda, Glue, EC2), ETL Pipelines, Kafka, Airflow, Docker[cite: 12, 13, 16].</p>
-            </div>
-            <div class="skill-category">
-                <h3>Analysis & Data</h3>
-                <p>Python, SQL, Power BI (DAX), Spark, Pandas, PostgreSQL[cite: 11, 14, 15, 16].</p>
-            </div>
+      <div class="project-card">
+        <h3>AWS Serverless Image Resizer</h3>
+        <p>
+          Developed a fully automated event-driven image resizing system
+          using AWS Lambda, S3 triggers, and CloudWatch.
+        </p>
+
+        <div class="tech-stack">
+          <span>AWS</span>
+          <span>Lambda</span>
+          <span>CloudWatch</span>
+          <span>Python</span>
         </div>
-    </section>
+      </div>
 
-    <section id="projects" class="container">
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="project-list">
-            <div class="project-card">
-                <div class="project-tag">AWS & Python</div>
-                <h3>Real-Time Data Pipeline [cite: 18]</h3>
-                <p>Automated end-to-end pipeline collecting live API data, processing via AWS Lambda, and storing in S3 with a Streamlit visualization dashboard[cite: 20, 21, 22].</p>
-                <div class="tech-stack"><span>AWS Lambda</span> <span>S3</span> <span>Streamlit</span></div>
-            </div>
+      <div class="project-card">
+        <h3>Swiggy Delivery Dashboard</h3>
+        <p>
+          Designed an interactive Power BI dashboard to analyze delivery
+          delays, customer ratings, and operational performance.
+        </p>
 
-            <div class="project-card">
-                <div class="project-tag">Serverless</div>
-                <h3>AWS Serverless Image Resizer [cite: 23]</h3>
-                <p>Event-driven architecture using S3-to-Lambda triggers to automatically resize images upon upload, monitored via CloudWatch[cite: 25, 26, 27].</p>
-                <div class="tech-stack"><span>CloudWatch</span> <span>Event-Bridge</span> <span>Python</span></div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-tag">Data Visualization</div>
-                <h3>Swiggy Delivery Performance [cite: 28]</h3>
-                <p>Analyzed delivery datasets using DAX to uncover that 49% of orders were delayed, identifying distance as a key driver for customer ratings[cite: 30, 31, 32].</p>
-                <div class="tech-stack"><span>Power BI</span> <span>DAX</span> <span>EDA</span></div>
-            </div>
+        <div class="tech-stack">
+          <span>Power BI</span>
+          <span>DAX</span>
+          <span>Analytics</span>
+          <span>Visualization</span>
         </div>
-    </section>
+      </div>
 
-    <footer class="container">
-        <div class="footer-content">
-            <h3>Let's Connect</h3>
-            <p>I am actively seeking Junior Data Engineer and Junior Cloud Engineer roles[cite: 6].</p>
-            <p class="contact-info">+91 8278874556 | abhaychaudhary2026@gmail.com [cite: 2]</p>
-        </div>
-    </footer>
+    </div>
+  </section>
 
+  <section class="section certifications">
+    <h2 class="section-title">Certification & Training</h2>
+
+    <div class="glass-card cert-card">
+      <h3>Data Science & Cloud Computing</h3>
+      <p>ThinkNEXT Technologies Pvt. Ltd.</p>
+      <span>2025 - 2026</span>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2 class="section-title">Contact Me</h2>
+
+    <div class="contact-container">
+      <div class="contact-box">
+        <i class="fas fa-phone"></i>
+        <h3>Phone</h3>
+        <p>+91 8278874556</p>
+      </div>
+
+      <div class="contact-box">
+        <i class="fas fa-envelope"></i>
+        <h3>Email</h3>
+        <p>abhaychaudhary2026@gmail.com</p>
+      </div>
+
+      <div class="contact-box">
+        <i class="fab fa-linkedin"></i>
+        <h3>LinkedIn</h3>
+        <p>linkedin.com/in/abhay-kumar-4a623a3a4</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Abhay Kumar | Designed with ❤️</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
+5. Wait 1-2 minutes
+6. Your portfolio will be live automatically
